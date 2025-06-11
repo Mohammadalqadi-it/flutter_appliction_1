@@ -26,6 +26,16 @@ class ContainerWidget extends StatelessWidget {
               right: BorderSide(color: Colors.yellow, width: 7),
             ),
           ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(height: 100, width: 100, color: Colors.blue),
+              Container(height: 100, width: 100, color: Colors.blue),
+              Container(height: 100, width: 100, color: Colors.blue),
+              Container(height: 100, width: 100, color: Colors.blue),
+              Container(height: 100, width: 100, color: Colors.blue),
+            ],
+          ),
         ),
       ),
     );
