@@ -12,6 +12,31 @@ class FloatingButton extends StatelessWidget {
         backgroundColor: Colors.blue,
         leadingWidth: 100,
       ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.amber,
+        notchMargin: 9,
+        shape: CircularNotchedRectangle(),
+        // padding: EdgeInsets.all(60),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              onPressed: () {
+                print("onPressed");
+              },
+              icon: Icon(Icons.person),
+              color: Colors.red,
+              onLongPress: () {
+                print("onLongPress");
+              },
+              iconSize: 35,
+            ),
+            IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.language)),
+          ],
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           print("object");
